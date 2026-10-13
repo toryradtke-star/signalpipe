@@ -1,0 +1,15 @@
+{
+  "name": "signalpipe",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Watch target accounts for buying signals, score them with cited evidence, draft outreach, and measure how often the judgment is right. Node 22 + SQLite, zero dependencies.",
+  "keywords": ["gtm", "gtm-engineering", "sales", "prospecting", "buying-signals", "evals", "claude", "cli", "sqlite"],
+  "author": "Tory Radtke (https://toryradtke.com)",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "bin": { "signalpipe": "bin/signalpipe.ts" },
+  "scripts": {
+    "test": "node --disable-warning=ExperimentalWarning --test \"src/**/*.test.ts\""
+  }
+}

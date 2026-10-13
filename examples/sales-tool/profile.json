@@ -1,0 +1,26 @@
+{
+  "seller": {
+    "name": "Acme Dialer (example)",
+    "offer": "A parallel dialer that lets SDR teams triple live conversations per hour, plugged into Salesforce or HubSpot.",
+    "proof": ["Customers like yours went from 4 to 12 connects per SDR per day (illustrative)"],
+    "voice": "short, concrete, peer to peer"
+  },
+  "icp": {
+    "description": "B2B companies with an outbound SDR/BDR team of 5+ that is growing, running Salesforce or HubSpot, and doing outbound calling.",
+    "disqualifiers": ["layoffs in sales", "no SDR or BDR team"]
+  },
+  "signals": {
+    "hiring": {
+      "roles": [
+        { "label": "sdr", "pattern": "\\bsdr\\b|\\bbdr\\b|sales development|business development rep", "weight": 12, "max": 48, "claim": "Hiring SDRs/BDRs" },
+        { "label": "sales-leadership", "pattern": "(head|director|vp|manager) of sales development|sdr manager|bdr manager", "weight": 20, "max": 20, "claim": "Hiring sales development leadership" },
+        { "label": "revops", "pattern": "rev(enue)? ?ops|sales operations", "weight": 6, "max": 12, "claim": "Hiring RevOps" }
+      ],
+      "mentionTools": true
+    },
+    "stack": { "tools": { "salesforce": 8, "hubspot": 6, "outreach": 6, "salesloft": 6, "gong": 4, "apollo": 3 } },
+    "news": { "lookbackDays": 180, "weights": { "funding": 15, "layoffs": -30, "leadership": 8 } }
+  },
+  "tiers": { "hot": 55, "warm": 25 },
+  "draft": { "goal": "a 20-minute demo with the head of sales development", "maxWords": 90 }
+}

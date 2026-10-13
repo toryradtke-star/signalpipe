@@ -1,0 +1,93 @@
+{
+  "seller": {
+    "name": "Tory Radtke",
+    "offer": "GTM engineering: building the automation, data plumbing and AI agents behind a company's pipeline (signals, enrichment, scoring, CRM workflows, tracking), as a full-time GTM / growth engineer.",
+    "proof": [
+      "jobpipe (github.com/toryradtke-star/jobpipe): polls Greenhouse, Lever, Ashby and Workday into SQLite, a rule screen cuts ~97%, Claude judges the rest; zero dependencies, 57 tests",
+      "omnia-pt-web: ad click to form to CRM upsert to opportunity, with conversion tracking guarded against double counts",
+      "seo-agent-system: multi-agent SEO pipeline; AI search impressions ~300K to 5.9M in six months",
+      "signalpipe: this tool, which found the company"
+    ],
+    "voice": "plain and specific, a builder talking to a builder; no flattery, no hype"
+  },
+  "icp": {
+    "description": "A B2B software company whose go-to-market team is growing and leaning on tooling: hiring for GTM engineering, RevOps, marketing ops or growth roles, scaling sales, using tools like Clay, HubSpot or Salesforce, ideally recently funded. Remote-friendly or Twin Cities.",
+    "disqualifiers": [
+      "recent layoffs in go-to-market teams",
+      "no go-to-market hiring at all"
+    ]
+  },
+  "signals": {
+    "hiring": {
+      "roles": [
+        {
+          "label": "gtm-engineer",
+          "pattern": "\\b(gtm|go[- ]to[- ]market) engineer|growth engineer|marketing engineer|revenue engineer|marketing automation engineer|ai automation",
+          "weight": 40,
+          "max": 40,
+          "claim": "Hiring a GTM engineer directly"
+        },
+        {
+          "label": "gtm-ops",
+          "pattern": "rev(enue)? ?ops|revenue operations|sales operations|marketing operations|gtm operations|go-to-market operations|growth operations|sales systems|crm (admin|manager)",
+          "weight": 15,
+          "max": 30,
+          "claim": "Hiring GTM operations"
+        },
+        {
+          "label": "growth",
+          "pattern": "growth (marketing|engineer|operations|ops)|head of growth|demand gen|lifecycle market|marketing technolog|martech",
+          "weight": 8,
+          "max": 16,
+          "claim": "Hiring growth / demand gen"
+        },
+        {
+          "label": "sales-team",
+          "pattern": "account executive|\\bsdr\\b|\\bbdr\\b|sales development|business development rep|account manager|solutions engineer|sales engineer",
+          "weight": 3,
+          "max": 15,
+          "claim": "Growing the sales team"
+        }
+      ],
+      "mentionTools": true
+    },
+    "stack": {
+      "tools": {
+        "clay": 10,
+        "hubspot": 4,
+        "salesforce": 4,
+        "segment": 3,
+        "n8n": 5,
+        "zapier": 2,
+        "llm": 2,
+        "apollo": 2,
+        "outreach": 2,
+        "salesloft": 2,
+        "gong": 2,
+        "sixsense": 2,
+        "commonroom": 3,
+        "koala": 3,
+        "hightouch": 3,
+        "census": 2
+      }
+    },
+    "news": {
+      "lookbackDays": 180,
+      "weights": {
+        "funding": 15,
+        "layoffs": -25,
+        "acquisition": 3,
+        "leadership": 5,
+        "launch": 2
+      }
+    }
+  },
+  "tiers": {
+    "hot": 50,
+    "warm": 25
+  },
+  "draft": {
+    "goal": "a 15-minute conversation with whoever leads GTM or RevOps about a GTM engineering role, open or not yet posted",
+    "maxWords": 110
+  }
+}

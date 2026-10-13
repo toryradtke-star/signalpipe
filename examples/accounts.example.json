@@ -1,0 +1,5 @@
+[
+  { "name": "Airtable", "domain": "airtable.com", "ats": "greenhouse", "slug": "airtable", "tags": ["saas"] },
+  { "name": "Ramp", "domain": "ramp.com", "ats": "ashby", "slug": "ramp", "tags": ["fintech"] },
+  { "name": "Example Co", "domain": "example.com", "tags": ["no public job board"] }
+]
